@@ -1,0 +1,27 @@
+﻿<Window x:Class="Maze.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Maze"
+        mc:Ignorable="d"
+        Title="Settings" Height="470" Width="800" Icon="/The Maze.jpg">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="maze.png"/>
+        </Grid.Background>
+        <Label Content="Settings" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="60" FontFamily="Curlz MT" Foreground="#FFECFF00" Grid.Column="1"/>
+        <ComboBox HorizontalAlignment="Left" Grid.Column="1" Name="Sex" Margin="10,130,0,0" VerticalAlignment="Top" Width="120" Background="Green" Foreground="Black"/>
+        <Label Content="Who will play?" HorizontalAlignment="Left" Background="GreenYellow" Margin="10,115,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="30" FontFamily="Chiller" Grid.Column="0"/>
+        <Label Content="Enter your Nickname: " HorizontalAlignment="Left" Margin="10,369,0,0" Background="GreenYellow" VerticalAlignment="Center" Foreground="Black" FontFamily="Chiller" FontSize="30" Grid.Column="0"/>
+        <Button Content="Return" Name="ReturnBtn" HorizontalAlignment="Right" Margin="0,0,40,37" VerticalAlignment="Bottom" Background="{x:Null}" Foreground="#FFECFF00" BorderBrush="Black" FontFamily="Chiller" FontSize="40" MouseEnter="Button_MouseEnter" Grid.Column="2" FontStretch="Normal" Cursor="Hand" MouseLeave="ReturnBtn_MouseLeave" Click="ReturnBtn_Click"  Width="93"/>
+        <TextBox HorizontalAlignment="Left" Grid.Column="1" Name="NickName" Margin="10,346,0,0" Text="Player" Background="White" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <Button Content="Show map" HorizontalAlignment="Right" Margin="0,0,40,125" VerticalAlignment="Bottom" Background="{x:Null}" Foreground="#FFECFF00" BorderBrush="Black" FontFamily="Chiller" FontSize="40" MouseEnter="Button_MouseEnter" Grid.Column="2" FontStretch="Normal" Cursor="Hand" MouseLeave="ReturnBtn_MouseLeave" Click="Button_Click"/>
+
+    </Grid>
+</Window>

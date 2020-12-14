@@ -1,0 +1,12 @@
+﻿<Window x:Class="Maze.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Maze"
+        mc:Ignorable="d"
+        Title="Help" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock Padding="10" TextWrapping="Wrap" Text="Hello. This is maze where you can find traps and target. First of all you are playing using yout cursor, remember to keep head of your character away form walls. If you will touch walls you will be teleported to the startpoint. If you want to exit press ESC. If you want to get hint, press H. Enjoy!" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Gray" FontSize="41" Height="434" Width="800"/>
+    </Grid>
+</Window>
